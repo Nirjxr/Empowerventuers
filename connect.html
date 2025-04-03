@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
+<meta http-equiv="Expires" content="Wed, 21 Oct 2025 07:28:00 GMT">
+
+    <title>Empower Ventuers</title>
+    <link rel="icon" type="image/png" href="img/firm-logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="contect.css" rel="stylesheet">
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data);
+        }
+    </script>
+</head>
+<body onload="loadComponent('footer', 'footer.html'); loadComponent('navbar','nav.html')">
+    <!-- spinner  -->
+	  <div id="loading">
+        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+    </div>
+    <div id="navbar"></div>
+    <div class="empaty-box"></div>
+
+    <div class="slogan-container">
+        <img src="img/about-1.jpg" alt="Slogan Image" class="slogan-image">
+        <h1 class="slogan-text">Let<span style="color: #ffc000;">'</span>s Talk</h1>
+    </div>
+    <div class="container-box">
+        <!-- First Column -->
+         <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <div class="left-box"><img src="img/phone.png"></div>
+          <div class="right-boxes">
+            <div class="right-box"><h4>Opportunities Are Just a Call Away!</h4></div>
+            <div class="right-box">+91 6352973489<br>+91 9274312797</div>
+          </div>
+        </div>
+    
+        <!-- Second Column -->
+        <div class="col-lg-5">
+          <div class="left-box"><img src="img/gmail.png"></div>
+          <div class="right-boxes">
+            <div class="right-box"><h4>Email Us:</h4></div>
+            <div class="right-box"><i>info.empowerventures@gmail.com<br>sales.empowerventures@gmail.com</i></div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    <div class="container">
+        <img src="img/contect.jpg" class="background-image" alt="Contact Background">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group left">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group right">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" placeholder="Phone Number" name="mobile" required>
+                    </div>
+                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="E-mail" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"
+                    placeholder="We highly respect your time and so, we are presenting simple forms with lesser but important fields to capture your requirement."
+                    required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

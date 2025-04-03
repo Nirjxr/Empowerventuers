@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, immutable">
+<meta http-equiv="Expires" content="Wed, 21 Oct 2025 07:28:00 GMT">
+
+    <title>Empower Ventuers</title>
+    <link rel="icon" type="image/png" href="img/firm-logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link href="about-us.css" rel="stylesheet">
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data);
+        }
+    </script>
+</head>
+
+<body onload="loadComponent('footer', 'footer.html'); loadComponent('navbar','nav.html')">
+    <!-- spinner  -->
+	  <div id="loading">
+        <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+            <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+        </svg>
+    </div>
+    <div id="navbar"></div>
+    <div class="container about-section">
+        <div class="row align-items-center raw-box">
+            <div class="col-lg-6 text-content text-box">
+                <h2 class="section-heading"> We work at an affordable cost, we continue to expand our reach, 
+                    ensuring every client receives the best value and service.</h2>
+                <p class="section-text">
+                    At Empower Ventures, we go beyond expectations, delivering top-quality products
+                     and exceptional service to clients across India. Our commitment to customer satisfaction
+                      and reliability has earned us a strong reputation, with many clients coming through referrals.
+                </p>
+               
+                <a href="connect.html"></a><button class="btn btn-warning">Contact Us</button>
+            </div>
+            <div class="col-lg-6 image-container position-relative">
+                <img src="img/experience.png" class="about-image" alt="Mining Worker">
+                <div class="experience-badge position-absolute">5+ Years Of Experience</div>
+            </div>
+        </div>
+        <hr>
+        <div class="row services-box">
+            <!-- Left Column -->
+            <div class="col-lg-6 col-sm-12 slogan-box">
+                <h1 class="fw-bold">We offer a variety of services to ensure the best possible solutions for your
+                    problems.</h1>
+                <div class="rotated-text1">Services
+                    <span class="underline"></span>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-lg-6 col-sm-12 text-box">
+                <p class="fw-medium">Our products and services are designed to meet your problem-solving needs with the
+                    highest level of care and precision.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <hr class="line-edit">
+        <div class="client">
+            <h2 class="color_text">Clientele</h2>
+            <p>Empower Ventuers takes pride in serving the ministries and departments
+                of the Indian government, along with esteemed research organizations,
+                public sector undertakings, and government banks. Our commitment to excellence
+                has earned the trust of numerous high-profile public-sector clients.
+                Here are some of the key organizations we proudly serve.</p>
+                
+        </div>
+        <div>
+            <table class="image-table">
+                <tr>
+                    <td><img src="img/1.png" alt="Image 1"></td>
+                    <td><img src="img/2.png" alt="Image 2"></td>
+                    <td><img src="img/3.png" alt="Image 3"></td>
+                    <td><img src="img/4.png" alt="Image 4"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/5.png" alt="Image 5"></td>
+                    <td><img src="img/6.png" alt="Image 6"></td>
+                    <td><img src="img/7.png" alt="Image 7"></td>
+                    <td><img src="img/8.png" alt="Image 8"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/9.png" alt="Image 9"></td>
+                    <td><img src="img/10.png" alt="Image 10"></td>
+                    <td><img src="img/11.png" alt="Image 11"></td>
+                    <td><img src="img/12.png" alt="Image 12"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
