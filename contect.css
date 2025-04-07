@@ -42,7 +42,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;  /* Full width of the screen */
-    height: 100vh; /* Full height of the screen */
+    height: auto /* Full height of the screen */
     
   }
 
@@ -64,10 +64,11 @@ body {
     overflow: hidden;
   }
   .left-box img {
-    width: 40%; 
-    height: 40%; 
-    object-fit: cover; 
-  }
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    max-width: 100%;
+}
   .right-boxes {
     color: white;
     width: 60%;
@@ -187,3 +188,79 @@ body {
         width: 100%; /* Columns stack on small screens */
       }
 }
+
+
+@media screen and (max-width: 992px) {
+    .slogan-text {
+      font-size: 3rem;
+      padding: 5px 10px;
+    }
+  
+    .col-lg-5 {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .left-box {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .left-box img {
+        width: 60px;
+        height: 60px;
+      }
+  
+    .right-boxes {
+      width: 100%;
+    }
+  
+    .right-box {
+      padding: 10px;
+    }
+  
+    .container-box {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .empaty-box {
+      height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slogan-text {
+      font-size: 2rem;
+    }
+  
+    .contact-form {
+      max-width: 95%;
+      padding: 15px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-group.left,
+    .form-group.right {
+      width: 100%;
+    }
+  
+    .contact-form button {
+      width: 100%;
+    }
+  
+    .background-image {
+      object-fit: cover;
+      opacity: 0.2;
+    }
+  
+    #footer {
+      font-size: 14px;
+    }
+  }
+  
